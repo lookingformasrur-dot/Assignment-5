@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+nav {
+  width: 100%;
+  max-width: 1280px;
+  height: 80px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: white;
+}
+
+/* Logo */
+
+.navbar-logo img {
+  width: 150px;
+  display: block;
+}
+
+/* Links */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #d91b7e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Buttons */
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-in {
+  font-size: 16px;
+  border: none;
+  background: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 16px;
+  background-color: #d91b7e;
+  transition: 0.3s;
+}
+
+.sign-up:hover {
+  opacity: 0.85;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  font-size: 28px;
+  cursor: pointer;
+
+  color: #111827;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .sign-in {
+    display: block;
+    font-size: 13px;
+    padding: 9px 13px;
+  }
+
+  .sign-up {
+    font-size: 13px;
+    padding: 9px 13px;
+    border-radius: 12px;
+  }
+
+  nav {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    position: sticky;
+    top: 0;
+  }
+
+  /* Hamburger LEFT */
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    order: 1;
+  }
+
+  /* Logo CENTER */
+
+  .navbar-logo {
+    order: 2;
+  }
+
+  .navbar-logo img {
+    width: 125px;
+  }
+
+  /* Buttons RIGHT */
+
+  .navbar-buttons {
+    order: 3;
+  }
+
+  .sign-up {
+    font-size: 13px;
+    padding: 9px 13px;
+    border-radius: 12px;
+  }
+
+  /* Mobile menu */
+
+  .navbar-links {
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: white;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    border-top: 1px solid #eeeeee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 15px;
+  }
+}

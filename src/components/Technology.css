@@ -1,0 +1,630 @@
+/* =========================
+   TECHNOLOGY SECTION
+========================= */
+
+.technology {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.technology h2 {
+  font-size: 36px;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.technology h2 span {
+  background: linear-gradient(90deg, #d91b7e, #7b2cff);
+  background-clip: text;
+  color: transparent;
+}
+
+.technology > p {
+  color: #666;
+  margin: 0 0 40px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TECHNOLOGY LAYOUT
+========================= */
+
+.technology-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+
+/* =========================
+   TECHNOLOGY GRID
+========================= */
+
+.technology-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+/* =========================
+   TECHNOLOGY CARD
+========================= */
+
+.technology-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 380px;
+  padding: 24px;
+  box-sizing: border-box;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background-color: #e0f7fa;
+
+  font-size: 28px;
+}
+
+.popular {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   CARD MIDDLE
+========================= */
+
+.card-middle {
+  min-width: 0;
+}
+
+.card-middle h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.card-middle p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* =========================
+   CARD BOTTOM
+========================= */
+
+.card-bottom {
+  width: 100%;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.card-info span {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: #f3f4f6;
+
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.card-bottom button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.card-bottom button:hover {
+  background: #1f2937;
+}
+
+.card-bottom button:disabled {
+  background: #e5e7eb;
+  color: #6b7280;
+
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   YOUR STACK
+========================= */
+
+.your-stack {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  padding: 24px;
+
+  background: #ffffff;
+}
+
+.your-stack h3 {
+  margin: 0 0 20px;
+
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+
+/* =========================
+   EMPTY STACK
+========================= */
+
+.aside-empty-p {
+  color: #94a3b8;
+
+  margin: 0;
+
+  padding: 17px 15px;
+
+  border: 1px dotted #94a3b8;
+  border-radius: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   STACK ITEM
+========================= */
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.stack-info {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.stack-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  background: #f3f4f6;
+
+  border-radius: 10px;
+}
+
+.stack-info strong {
+  display: block;
+
+  font-size: 15px;
+  color: #111827;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stack-info p {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+  color: #6b7280;
+}
+
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove-btn {
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #9ca3af;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.remove-btn:hover {
+  color: #ef4444;
+}
+
+.remove-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================
+   REMOVE ALL BUTTON
+========================= */
+
+.remove-all-btn {
+  width: 100%;
+
+  margin-top: 18px;
+  padding: 11px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #111827;
+  color: #ffffff;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.remove-all-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* =========================
+   TABLET
+   769px - 1100px
+========================= */
+
+@media (max-width: 1100px) {
+
+  .technology {
+    padding: 70px 24px;
+  }
+
+  .technology-layout {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 20px;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .technology-card {
+    min-height: 370px;
+    padding: 22px;
+  }
+
+  .card-middle h3 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   481px - 768px
+========================= */
+
+@media (max-width: 768px) {
+
+  .technology {
+    padding: 55px 20px;
+  }
+
+  .technology h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .technology > p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+  }
+
+
+  /* Layout becomes vertical */
+
+  .technology-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  /* One card per row */
+
+  .technology-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  /* Technology card */
+
+  .technology-card {
+    width: 100%;
+
+    min-height: 350px;
+
+    padding: 22px;
+  }
+
+
+  /* Card top */
+
+  .card-top {
+    gap: 15px;
+  }
+
+  .tech-icon {
+    width: 46px;
+    height: 46px;
+
+    font-size: 26px;
+  }
+
+  .popular {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+
+
+  /* Card middle */
+
+  .card-middle h3 {
+    font-size: 22px;
+  }
+
+  .card-middle p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+
+  /* Card info */
+
+  .card-info {
+    gap: 6px;
+  }
+
+  .card-info span {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+
+  /* Button */
+
+  .card-bottom button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+
+  /* Your stack */
+
+  .your-stack {
+    width: 100%;
+
+    order: 2;
+
+    padding: 22px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   480px and below
+========================= */
+
+@media (max-width: 480px) {
+
+  .technology {
+    padding: 45px 16px;
+  }
+
+  .technology h2 {
+    font-size: 26px;
+  }
+
+  .technology > p {
+    font-size: 14px;
+  }
+
+
+  /* Card */
+
+  .technology-card {
+    min-height: 340px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+  }
+
+
+  /* Top */
+
+  .tech-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 24px;
+  }
+
+  .popular {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+
+  /* Middle */
+
+  .card-middle h3 {
+    font-size: 20px;
+  }
+
+  .card-middle p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* Info */
+
+  .card-info {
+    gap: 5px;
+  }
+
+  .card-info span {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+
+  /* Button */
+
+  .card-bottom button {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+
+  /* Stack */
+
+  .your-stack {
+    padding: 20px;
+  }
+
+  .your-stack h3 {
+    font-size: 20px;
+  }
+
+  .stack-info {
+    gap: 10px;
+  }
+
+  .stack-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+}
