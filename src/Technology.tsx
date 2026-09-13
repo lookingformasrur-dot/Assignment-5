@@ -17,7 +17,18 @@ import {
 } from "react-icons/si";
 import { IoClose } from "react-icons/io5";
 
-const techData = [
+type Technology = {
+  icon: React.ReactNode;
+  color?: string;
+  name: string;
+  description: string;
+  category: string;
+  level: string;
+  rating: string;
+  tag?: string;
+};
+
+const techData: Technology[] = [
   {
     icon: <SiReact color="#61dafb" />,
     color: "#61dafb",
@@ -162,7 +173,7 @@ const techData = [
 ];
 
 function Technologies() {
-  const [stack, setStack] = useState([]);
+  const [stack, setStack] = useState<Technology[]>([]);
   return (
     <section className="technology">
       <h2>
@@ -255,6 +266,5 @@ function Technologies() {
     </section>
   );
 }
-
 
 export default Technologies;
